@@ -1,0 +1,150 @@
+.gpt3__footer-background {
+    background: #031B34;
+}
+.gpt3__footer {
+   margin: 5rem 5rem 0 5rem;
+}
+.gpt3__footer-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gpt3__footer-header h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.gpt3__footer-header button {
+    width: 218px;
+    height: 65px;
+    background: transparent;
+    border: 2px solid #fff;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+    color: #FFFFFF;
+    margin-bottom: 5rem;
+    transition: 1s;
+}
+.gpt3__footer-header button:hover {
+    transform: scale(1.05);
+}
+.gpt3__footer-sections {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.gpt3__footer-sections div:nth-child(1) img:nth-child(2) {
+    width: 30%;
+    display: none;
+    margin: 2rem 2rem 0 2rem;
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(322deg) brightness(104%) contrast(101%);
+}
+
+
+.gpt3__footer-sections h4 {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+.gpt3__footer-sections p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0.7rem 0;
+    color: #FFFFFF;
+
+
+}
+.gpt3__footer_lastdiv {
+    padding: 2rem;
+    text-align: center;
+}
+.gpt3__footer div:last-child p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1100px) {
+    .gpt3__footer-header h1 {
+        font-family: var(--font-family);
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 68px;
+        text-align: center;
+        letter-spacing: -0.04em;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .gpt3__footer-sections div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gpt3__footer-sections div:nth-child(1) img:nth-child(2) {
+        display: flex;
+    }
+    .gpt3__footer-header button {
+        width: 200px;
+        height: 60px;
+    }
+    .gpt3__footer-header h1 {
+        font-family: var(--font-family);
+        font-weight: 800;
+        font-size:45px;
+        line-height: 55px;
+        text-align: center;
+        letter-spacing: -0.04em;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .gpt3__footer-sections {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .gpt3__footer-sections div {
+        padding-bottom: 5rem;
+        padding-top: 1rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .gpt3__footer-sections {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .gpt3__footer-sections div {
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 550px) {
+    .gpt3__footer p {
+        font-size: 16px
+    }
+    .gpt3__footer h4 {
+        font-size: 24px;
+    }
+    .gpt3__footer h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+}
