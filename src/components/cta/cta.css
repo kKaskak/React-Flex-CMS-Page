@@ -2,7 +2,7 @@
     background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10.7236px;
+    border-radius: 1rem;
 
     display: flex;
     justify-content: space-between;
@@ -23,19 +23,14 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 30px;
-
     color: #0E0E0E;
-    transition: 1s;
     cursor: pointer;
-}
-.gpt3__cta-content p:hover {
-    transform: scale(1.05) translateX(15px);
 }
 .gpt3__cta-button button {
     width: 189.14px;
     height: 59.4px;
     background: #000000;
-    border-radius: 40px;
+    border-radius: 2rem;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
@@ -44,11 +39,8 @@
     border: none;
     outline: none;
     cursor: pointer;
-    transition: 1s;
 }
-.gpt3__cta-button button:hover {
-    transform: scale(1.05);
-}
+
 @media screen  and (max-width: 950px) {
     .gpt3__cta-content h4 {
         font-size: 22px;
@@ -79,9 +71,6 @@
     .gpt3__cta-content p {
         font-size: 12px;
         line-height: 20px;
-    }
-    .gpt3__cta-content p:hover {
-        transform: scale(1.05) translateX(10px);
     }
     .gpt3__cta-button button {
         font-size: 14px;

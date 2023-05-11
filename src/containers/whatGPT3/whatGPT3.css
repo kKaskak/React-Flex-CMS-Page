@@ -21,7 +21,61 @@
     background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: relative;
+    border-radius: 1rem;
 }
+.gpt3__whatgpt3::before {
+    content: "";
+    height: 70px;
+    width: 1px;  
+    position: absolute;  
+    right: -1px;
+    top: 10%;
+    transition: top, opacity;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+    background: linear-gradient(
+    transparent,
+    mediumslateblue,
+    transparent
+    );
+    opacity: 0;
+}
+.gpt3__whatgpt3::before {  
+    top: 10%;
+    opacity: 0;
+  }
+  
+  .gpt3__whatgpt3:hover::before {
+    top: 65%;
+    opacity: 1;
+  }
+.gpt3__whatgpt3::after {
+    content: "";
+    height: 70px;
+    width: 2px;  
+    position: absolute;  
+    left: -1px;
+    top: 65%;
+    transition: top, opacity;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+    background: linear-gradient(
+    transparent,
+    mediumslateblue,
+    transparent
+    );
+    opacity: 0;
+}
+.gpt3__whatgpt3::after {  
+    top: 65%;
+    opacity: 0;
+  }
+  
+  .gpt3__whatgpt3:hover::after {
+    top: 10%;
+    opacity: 1;
+  }
 .gpt3__whatgpt3-feature {
     display: flex;
 }
@@ -47,19 +101,19 @@
     line-height: 30px;
     color: var(--color-subtext);
     cursor: pointer;
-    transition: 1s;
 }
-.gpt3__whatgpt3-heading p:hover {
-    transform: scale(1.05) translateX(-10px);
-}
+
 .gpt3__whatgpt3-container {
+    display: flex;
+    flex-direction: row;
+}
+.gpt3__whatgpt3-container span {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 2rem;
-
 }
-.gpt3__whatgpt3-container > .gpt3__features-container__feature {
+.gpt3__whatgpt3-container span > .gpt3__features-container__feature {
     flex: 1;
     margin: 1rem;
     min-width: 210px;
@@ -69,6 +123,11 @@
 
 .gpt3__whatgpt3-container .gpt3__features-container_feature-text {
     margin-top: 0.5rem;
+}
+@media screen and (max-width: 930px) {
+    .gpt3__whatgpt3-container {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 850px) {
     .gpt3__whatgpt3-heading {
@@ -84,7 +143,7 @@
 
 @media screen and (max-width: 650px) {
 
-    .gpt3__whatgpt3-feature > .gpt3__features-container__feature {
+    .gpt3__whatgpt3-feature  > .gpt3__features-container__feature {
         flex-direction: column;
     }
 

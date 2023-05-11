@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project was made by kkaskak. Design from found somewhere on figma.
+
+Used: React JS, Framer-motion, react-intesection-observer, react hooks (useRef, useState, useEffect), plain css.
+
 ## Available Scripts
 
 In the project directory, you can run:

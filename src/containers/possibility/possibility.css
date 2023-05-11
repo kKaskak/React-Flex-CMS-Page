@@ -30,14 +30,10 @@
     line-height: 30px;
     color: #71E5FF;
     cursor: pointer;
-    transition: 1s;
 }
 
 .gpt3__possibility-container h4:last-child {
     color: #ff8A71;
-}
-.gpt3__possibility-container h4:hover {
-    transform: scale(1.05) translateX(15px);
 }
 
 .gpt3__possibility-container h1 {

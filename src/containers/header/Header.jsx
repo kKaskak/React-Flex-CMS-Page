@@ -1,29 +1,30 @@
 import React from 'react';
 import './header.css';
 import people from '../../assets/people.png'
-import ai from '../../assets/ai.png'
-
+import ai from '../../assets/image.png'
+import { motion } from "framer-motion"
+import { container, container1, item, item1, headerImg, headerH1, headerP } from './animations-header';
 const Header = () => {
   return (
-    <div className='gpt3__header section__margin' id='home'>
+      <div className='gpt3__header section__margin' id='home'>
       <div className='gpt3__header-content'>
-        <h1 className='gradient__text'>Discover GPT-3: OpenAI's Powerful Language Model</h1>
-        <p>With its advanced language processing capabilities, GPT-3 has become a go-to tool for developers and businesses. Our website provides case studies, tools, and informative articles that showcase the potential of GPT-3. Join us to explore how GPT-3 can help you build something amazing.</p>
+        <motion.h1 animate={headerH1} className='gradient__text' style={{opacity: 0}}>Discover GPT-7: kKaskak's Powerful Language Model</motion.h1>
+        <motion.p animate={headerP} style={{opacity: 0}}>Experience the power of GPT-7 with our case studies, tools, and articles. Join us now to learn more.</motion.p>
 
-        <div className='gpt3__header-content__input'>
-          <input type="email" placeholder="Your Email Address"></input>
-          <button type='button'>Get Started</button>
-        </div>
-        <div className='gpt3__header-content__people'>
-          <img src={ people } alt="people" />
-          <p>1,600 people requested access a visit in last 24 hours</p>
-        </div>
+        <motion.div variants={container} className='gpt3__header-content__input' initial="hidden" animate="show">
+          <motion.input variants={item} type="email" placeholder="Your Email Address"></motion.input>
+          <motion.button variants={item} type='button'>Get Started</motion.button>
+        </motion.div>
+        <motion.div initial="hidden" animate="show" variants={container1} className='gpt3__header-content__people'>
+          <motion.img variants={item1} src={ people } alt="people" />
+          <motion.p variants={item1}>1,600 people requested access a visit in last 24 hours</motion.p>
+        </motion.div>
       </div>
       <div className='gpt3__header-image'>
-          <img src={ ai } alt="ai" />
+          <motion.img style={{opacity: 0}} animate={headerImg} src={ ai } alt="AI generated photo of a woman." />
       </div>
     </div>
-  )
+    )
 }
 
 export default Header

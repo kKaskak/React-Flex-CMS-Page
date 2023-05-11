@@ -7,4 +7,10 @@
 }
 .gpt3__brand-image {
     padding: 1rem 2rem;
+    align-items: flex-end;
+}
+.gpt3__brand-image img {
+    width: 100px;
+    height: 30px;
+    object-fit: contain;
 }

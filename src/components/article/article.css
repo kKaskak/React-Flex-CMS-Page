@@ -4,12 +4,15 @@
     display: flex;
     flex-direction: column;
     background: var(--color-footer);
+    border-radius: 1rem;
 }
 
 .gpt3__blog-articles__article-image img {
     width: 100%;
     height: 100%;
     background: var(--color-bg);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 .gpt3__blog-articles__article-components {
     display: flex;
@@ -18,6 +21,8 @@
     padding: 1rem 1.5rem;
     height: 100%;
     background: #042C54;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 .gpt3__blog-articles__article-components p {
     font-family: var(--font-family);
@@ -32,7 +37,7 @@
     line-height: 30px;
     color: #FFFFFF;
     font-family: var(--font-family);
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     margin-top: 0.5rem;
 
     cursor: pointer;
@@ -45,4 +50,11 @@
     color: #FFFFFF;
 
     cursor: pointer;
+}
+.gpt3__blog-articles__article-desc {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: normal;
+    color: #FFFFFF;
 }

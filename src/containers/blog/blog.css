@@ -1,6 +1,7 @@
 .gpt3__blog {
     display: flex;
     flex-direction: column;
+    padding-bottom: 5rem;
 }
 .gpt3__blog-header {
     text-align: left;
@@ -81,7 +82,7 @@
         line-height: 42px;
     }
     .gpt3__blog-articles__article-components h3  {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
 }
