@@ -32,13 +32,12 @@ const Footer = () => {
           </div>
           <div>
             <h4>Get in touch</h4>
-            <p>Varna 9003, Bulgaria</p>
             <a href="http://kkaskak.com"><strong>kkaskak.com</strong></a>
             <p>tzimostrad@gmail.com</p>
           </div>
         </div>
         <div className='gpt3__footer_lastdiv'>
-          <p>© 2023 <strong>kKaskak</strong> GPT-7. All rights reserved.</p>
+          <p>© 2023 <strong>kKaskak | GPT-7 AI.</strong> All rights reserved.</p>
         </div>
       </div>
     </div>

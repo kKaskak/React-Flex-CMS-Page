@@ -8,8 +8,8 @@ const Header = () => {
   return (
       <div className='gpt3__header section__margin' id='home'>
       <div className='gpt3__header-content'>
-        <motion.h1 animate={headerH1} className='gradient__text' style={{opacity: 0}}>Discover GPT-7: kKaskak's Powerful Language Model</motion.h1>
-        <motion.p animate={headerP} style={{opacity: 0}}>Experience the power of GPT-7 with our case studies, tools, and articles. Join us now to learn more.</motion.p>
+        <motion.h1 animate={headerH1} className='gradient__text' style={{opacity: 0}}>Discover GPT-7 AI: kKaskak's Powerful Language Model</motion.h1>
+        <motion.p animate={headerP} style={{opacity: 0}}>Experience the power of <strong>GPT-7</strong> with our case studies, tools, and articles. Join us now to learn more.</motion.p>
 
         <motion.div variants={container} className='gpt3__header-content__input' initial="hidden" animate="show">
           <motion.input variants={item} type="email" placeholder="Your Email Address"></motion.input>
@@ -21,7 +21,7 @@ const Header = () => {
         </motion.div>
       </div>
       <div className='gpt3__header-image'>
-          <motion.img style={{opacity: 0}} animate={headerImg} src={ ai } alt="AI generated photo of a woman." />
+          <motion.img style={{opacity: 0}} animate={headerImg} src={ ai } alt="GPT7-AI generated photo of a woman." />
       </div>
     </div>
     )
