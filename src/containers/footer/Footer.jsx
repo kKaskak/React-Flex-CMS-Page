@@ -38,6 +38,7 @@ const Footer = () => {
         </div>
         <div className='gpt3__footer_lastdiv'>
           <p>© 2023 <strong>kKaskak | GPT-7 AI.</strong> All rights reserved.</p>
+          <p style={{padding: '1rem', lineHeight: '1.2rem'}}>This is a promotional website made to be showcased on my personal portfolio as a React JS developer. OpenAI and GPT are trademarks of OpenAI. GPT-7 is a fixional GPT model. I do not have any connection with OpenAI.</p>
         </div>
       </div>
     </div>

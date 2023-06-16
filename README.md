@@ -1,14 +1,6 @@
-GPT-7 AI by kKaskak
-Welcome to the GitHub repository for kKaskak's GPT-7 AI project, a promotional website showcasing the potential and power of the GPT-7 language model.
+# Getting Started with Create React App
 
-Overview
-GPT-7 AI is an advanced natural language processing model capable of generating human-like language and performing a variety of language tasks. Its capabilities have made it a popular tool among developers and businesses. This project showcases the potential applications and opportunities provided by GPT-7 AI.
-
-Contact
-For more information, please visit my main website at kKaskak.com or contact me directly at tzimostrad@gmail.com.
-
-License
-© 2023 kKaskak | GPT-7 AI. All rights reserved.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This project was made by kkaskak. Design from found somewhere on figma.
 
