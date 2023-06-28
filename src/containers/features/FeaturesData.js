@@ -5,7 +5,7 @@ const FeaturesData = [
   // },
   {
     title: "Endless Possibilities",
-    text: "With its advanced capabilities, GPT-7 can be used to build chatbots, knowledgebases, and educational tools.",
+    text: "With our advanced content creator researching techniques, we can easily find a creator that will help you market yourstartup.",
   },
   // {
   //   title: "Revolutionize Your Business",
@@ -13,7 +13,7 @@ const FeaturesData = [
   // },
   {
     title: "Innovative Solutions",
-    text: "GPT-7 can be used to create innovative solutions for a wide range of industries, including healthcare, finance, and entertainment.",
+    text: "GPT-7 Connect finds for you creators that get payed based on the amount of traffic they bring to your website, a percent of each sale of your service or a fixed amount.",
   },
 ];
 export { FeaturesData };

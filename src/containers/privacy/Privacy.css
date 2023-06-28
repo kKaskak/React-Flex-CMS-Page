@@ -1,0 +1,52 @@
+.gpt7__privacy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gpt7__privacy-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-family: var(--font-family) ;
+}
+@media screen and (max-width: 1050px) {
+    .gpt7__privacy-heading {
+      font-size: 3rem;
+    
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .gpt7__privacy-heading {
+      font-size: 2rem;
+    }
+  }
+  .policy {
+    color: #fff;
+    font-family: var(--font-family);
+  }
+  .policy  h2 {
+    font-size: 24px;
+    font-family: var(--font-family);
+    padding: 1rem 0;
+
+  }
+  .policy ul {
+    padding: 2rem;
+  }
+  .policy li {
+    padding: 0.3rem;
+  }
+  .policy p {
+    padding: 1rem 0 0rem 0;
+  }
+
+.footer__privacy {
+    padding: 2rem;
+    color: #fff;
+    font-family: var(--font-family);
+    text-align: center;
+}
+.footer__privacy p {
+  font-size: 14px;
+}

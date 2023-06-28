@@ -67,6 +67,7 @@
     flex-direction: column;
     text-align: end;
     background: var(--color-footer);
+    z-index: 3;
     padding: 2rem;
     position: absolute;
     top: 40px;

@@ -1,6 +1,6 @@
 let x = -400;
 let delayHeaderImg = 1.7;
-window.innerWidth >= 800 ? (delayHeaderImg = 1.7) : (delayHeaderImg = 0.3);
+window.innerWidth >= 800 ? (delayHeaderImg = 1.7) : (delayHeaderImg = 1.5);
 window.innerWidth >= 800 ? (x = -400) : (x = -200);
 // -> First container
 const container = {
