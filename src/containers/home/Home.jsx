@@ -9,7 +9,7 @@ import {
 } from '../../containers'
 import { CTA, Navbar } from '../../components'
 
-const Home = () => {
+const Home = ({onButtonClick}) => {
   const [isLoadedFull, setIsLoadedFull] = useState(false)
   useEffect(() => {
     setTimeout(() => {
@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
     <Navbar />
-    <Header />
+    <Header onButtonClick={onButtonClick} />
     {isLoadedFull && (
       <>
         <WhatGPT3 />

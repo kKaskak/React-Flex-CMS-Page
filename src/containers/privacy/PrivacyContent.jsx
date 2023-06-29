@@ -60,8 +60,28 @@ const PrivacyContent = () => {
           <h2>6. Children's Privacy</h2>
 
           <p>Our services are not intended for individuals under the age of 16. We do not knowingly collect personal information from children. If you believe that we have collected personal information from a child without parental consent, please contact us immediately so that we can take appropriate action.</p>
+          <h2>7. Our services</h2>
 
-          <h2>7. Changes to This Privacy Policy</h2>
+          <p>We provide different services both for startups and creators. We help startups find a sutaible content creator that will perfectly align with their product/service and promote their product/service. We also help creators find startups that are willing to pay them via affiliate marketing, PPC or a fixed amount per story, post or video. Now you, as a startup or a content creator, don't have to spend hours on researching the suitable creator/startup.</p>
+          <h2>7. Our profit</h2>
+
+          <p>We get payed on a contract.</p>
+          <p>If you are a startup:</p>
+          <ul>
+              <li>You might ocasionally be connected for free with a creator that is willing to work with you.</li>
+              <li>The number of creators that we find specifically for your startup, who are ready to start working with you.</li>
+              <li>The reach (audience) of a creator that you will work with.</li>
+              <li>A % of sales of your service/product that was made through us.</li>
+          </ul>
+          <p>How you get payed as a creator:</p>
+          <ul>
+              <li>You might ocasionally be connected for free with a startup that is willing to work with you.</li>
+              <li>Based on views, likes, CPL or a % of the MMR which was created from the traffic you got.</li>
+              <li>You get your payment via paypal or a different service that we agree on in our contract.</li>
+              <li>The amount you get payed heavily depends on the amount of people who buy the startup product/service or visit their website.</li>
+          </ul>
+
+          <h2>8. Changes to This Privacy Policy</h2>
 
           <p>We reserve the right to update or modify this privacy policy at any time. Any changes will be reflected on this page with a revised effective date. We encourage users to review this privacy policy periodically to stay informed about how we handle their personal information.</p>
       </div>

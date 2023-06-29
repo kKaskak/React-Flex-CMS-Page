@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom';
 import { RiMailFill } from 'react-icons/ri';
 
 const Footer = () => {
+  const ScrollTop = () => {
+      window.scrollTo(0, 0)
+  }
   return (
     <div className='gpt3__footer-background'>
       <div className='gpt3__footer'>
@@ -21,13 +24,13 @@ const Footer = () => {
           </div>
           <div>
           <h4>Company</h4>
-            <p><Link to={'/privacy'}>Terms & Conditions</Link></p>            
-            <p><Link to={'/privacy'}>Privacy policy</Link></p>     
+            <p><Link onClick={ScrollTop} to={'/privacy'}>Terms & Conditions</Link></p>            
+            <p><Link onClick={ScrollTop} to={'/privacy'}>Privacy policy</Link></p>     
           </div>
           <div>
             <h4>Socials</h4>
-            <p><Link to={'/contact'}>Contact</Link></p>
-            <p><Link to={'/contact'}>Social media</Link></p>       
+            <p><Link onClick={ScrollTop} to={'/contact'}>Contact</Link></p>
+            <p><Link onClick={ScrollTop} to={'/contact'}>Social media</Link></p>       
           </div>
           <div>
             <h4>Get in touch</h4>

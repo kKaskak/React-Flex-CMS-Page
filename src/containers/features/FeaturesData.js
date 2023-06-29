@@ -5,7 +5,7 @@ const FeaturesData = [
   // },
   {
     title: "Endless Possibilities",
-    text: "With our advanced content creator researching techniques, we can easily find a creator that will help you market yourstartup.",
+    text: "With our advanced content creator researching techniques, we can easily find a creator that will help you market your startup.",
   },
   // {
   //   title: "Revolutionize Your Business",

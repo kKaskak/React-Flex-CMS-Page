@@ -10,7 +10,7 @@ const WhatGPT3 = () => {
     <div className='gpt3__whatgpt3 section__margin' id='wgpt3'>
       <motion.div initial={'hidden'} whileInView={'show'}  viewport={{ once: true }} variants={itemFirst} className='gpt3__whatgpt3-feature'>
         <Feature title="What is GPT-7 Connect" text="GPT-7 Connect is an online marketing agency that helps startups 
-        in finding creators that are willing to promote their services."/>
+        in finding creators who are willing to promote their services."/>
       </motion.div>
       <div className='gpt3__whatgpt3-heading'>
         <motion.h1 initial={'hidden'} whileInView={'show'} viewport={{ once: true }} variants={h1Anim} className='gradient__text'>The possibilities are beyond your imagination</motion.h1>

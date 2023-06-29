@@ -3,11 +3,11 @@ import { NavbarShort } from '../../components'
 import ContactContent from './ContactContent'
 
 
-const Contact = () => {
+const Contact = ({inputValue}) => {
   return (
     <>
     <NavbarShort />
-    <ContactContent />
+    <ContactContent inputValue={inputValue} />
     </>
   )
 }
