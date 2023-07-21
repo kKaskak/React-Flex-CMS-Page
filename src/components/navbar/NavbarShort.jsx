@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const Menu = () => (
   <>
  <Link to={'/'}> <p>Home</p></Link>
+ {/* <Link to={'/pricing'}> <p>Pricing</p></Link> */}
  <Link to={'/contact'}> <p>Contact</p></Link>
  <Link to={'/privacy'}> <p>Privacy policy</p></Link>
   </>

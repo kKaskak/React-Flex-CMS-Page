@@ -1,6 +1,9 @@
 .hr-contact {
   margin: 2rem auto 0;
   width: 600px;
+  background-color: var(--color-text);
+  height: 1px;
+  border: none;
 }
 .gpt7__contact {
     display: flex;
@@ -76,8 +79,8 @@
   .ct__contact-card {
     align-items: center;
     background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid var(--color-text);;
+    color: var(--color-text);;
     border-radius: 1.5rem;
     cursor: pointer;
     display: flex;
@@ -98,7 +101,7 @@
   
   .ct__contact-card:hover {
     color: #000000;
-    background-color: #fff;
+    background-color: var(--color-text);;
   }
 
   
@@ -179,10 +182,10 @@
   .ct__contact-form button {
     padding: 0.7rem 2rem;
     border-radius: 1.5rem;
-    border: 2px solid #fff;
+    border: 2px solid var(--color-text);;
     background-color: transparent;
     font-weight: 500;
-    color: #fff;
+    color: var(--color-text);;
     outline: none;
     margin: 2rem 0 0rem 0;
     font-family: var(--font-family);
@@ -199,7 +202,7 @@
 
   
   .ct__contact-form button:hover {
-    background-color: #fff;
+    background-color: var(--color-text);;
     color: #000000;
     transform: scale(1.05);
   }
@@ -220,7 +223,7 @@
     font-size: 35px;
     display: flex;
     text-align: center;
-    color: #fff;
+    color: var(--color-text);
     font-family: var(--font-family);
   }
   @media screen and (max-width: 700px) {
@@ -323,4 +326,15 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.social {
+  color: var(--color-text);
+}
+.error-message {
+  color: var(--color-text);
+  background: transparent;
+  font-family: var(--font-family);
+  padding-top: 1rem;
+  text-align: center;
+  font-weight: 700;
 }

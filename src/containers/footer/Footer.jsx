@@ -8,13 +8,13 @@ import { RiMailFill } from 'react-icons/ri';
 
 const Footer = () => {
   const ScrollTop = () => {
-      window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
   return (
     <div className='gpt3__footer-background'>
       <div className='gpt3__footer'>
         <div className='gpt3__footer-header'>
-          <h1 className='gradient__text'>Do you want your startup to break<br></br>the charts?</h1>
+          <h1 className='gradient__text'>Do you want your brand to break<br></br>the charts?</h1>
           <Link to={'/contact'}><motion.button whileHover={{ scale: 1.05, transition: 0.5}}>Get in touch</motion.button></Link>
         </div>
         <div className='gpt3__footer-sections'>
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
         <div className='gpt3__footer_lastdiv' style={{paddingTop: '3rem'}}>
           <p>© 2023 <strong>GPT7 Connect</strong> All rights reserved.</p>
-          <p style={{padding: '1rem', lineHeight: '1.2rem'}}>We are an online marketing agency that helps startups get recognised.</p>
+          <p style={{padding: '1rem', lineHeight: '1.2rem'}}>We are an online marketing agency that helps brands get recognised.</p>
         </div>
       </div>
     </div>

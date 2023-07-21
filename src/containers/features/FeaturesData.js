@@ -5,7 +5,7 @@ const FeaturesData = [
   // },
   {
     title: "Endless Possibilities",
-    text: "With our advanced content creator researching techniques, we can easily find a creator that will help you market your startup.",
+    text: "With our advanced content creator researching techniques, we can easily find a creator that will help you market your brand.",
   },
   // {
   //   title: "Revolutionize Your Business",
@@ -13,7 +13,7 @@ const FeaturesData = [
   // },
   {
     title: "Innovative Solutions",
-    text: "GPT-7 Connect finds for you creators that get payed based on the amount of traffic they bring to your website, a percent of each sale of your service or a fixed amount.",
+    text: "GPT-7 Connect finds for you creators that get payed based on the amount of traffic they bring to your website or a fixed amount.",
   },
 ];
 export { FeaturesData };

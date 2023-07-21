@@ -22,11 +22,12 @@
     }
   }
   .policy {
-    color: #fff;
+    color: var(--color-text);
     font-family: var(--font-family);
   }
   .policy  h2 {
     font-size: 24px;
+    color: #fff;
     font-family: var(--font-family);
     padding: 1rem 0;
 

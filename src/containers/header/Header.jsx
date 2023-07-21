@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import './header.css';
-import people from '../../assets/people.png';
 import ai from '../../assets/image.png';
 import { motion } from 'framer-motion';
-import { container, container1, item, item1, headerImg, headerH1, headerP } from './animations-header';
+import { container, container1, item, headerImg, headerH1, headerP } from './animations-header';
 import { Link } from 'react-router-dom';
 
 const Header = ({ onButtonClick }) => {
@@ -23,7 +22,7 @@ const Header = ({ onButtonClick }) => {
           We connect people
         </motion.h1>
         <motion.p animate={headerP} style={{ opacity: 0 }}>
-          Our online agency <strong>GPT-7 Connect</strong> can help you with marketing <b>your startup.</b>
+          Our online agency <strong>GPT-7 Connect</strong> can help you with marketing <b>your brand.</b>
         </motion.p>
 
         <motion.div variants={container} className='gpt3__header-content__input' initial='hidden' animate='show'>

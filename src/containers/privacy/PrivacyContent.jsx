@@ -5,10 +5,10 @@ const PrivacyContent = () => {
   return (
     <>
       <div className='gpt7__privacy section__padding'>
-         <h1 className='gradient__text gpt7__privacy-heading'><MdPrivacyTip style={{marginRight: '1rem', color: '#fff'}}/> Privacy Policy</h1>
+         <h1 className='gradient__text gpt7__privacy-heading'><MdPrivacyTip className='social' style={{marginRight: '1rem'}}/> Privacy Policy</h1>
       </div>
       <div className='policy section__padding' style={{paddingTop: 0}}>
-        <p>This privacy policy outlines how GPT-7 Connect collects, uses, and protects the personal information of individuals who use our services as a middle person connecting startups with creators. We are committed to ensuring the privacy and security of the information provided to us.</p>
+        <p>This privacy policy outlines how GPT-7 Connect collects, uses, and protects the personal information of individuals who use our services as a middle person connecting brands with creators. We are committed to ensuring the privacy and security of the information provided to us.</p>
 
           <h2>1. Information We Collect</h2>
 
@@ -25,7 +25,7 @@ const PrivacyContent = () => {
 
           <p>We use the collected information for the following purposes:</p>
           <ul>
-              <li>To connect startups with suitable creators</li>
+              <li>To connect brands with suitable creators</li>
               <li>To communicate with users regarding our services</li>
               <li>To personalize and improve the user experience</li>
               <li>To send promotional emails and newsletters (with user consent)</li>
@@ -38,7 +38,7 @@ const PrivacyContent = () => {
           <p>We may share personal information with third parties in the following circumstances:</p>
           <ul>
               <li>With the consent of the user</li>
-              <li>With creators for the purpose of connecting them with startups</li>
+              <li>With creators for the purpose of connecting them with brands</li>
               <li>With service providers who assist us in delivering our services</li>
               <li>When required by law or to protect our legal rights</li>
           </ul>
@@ -62,23 +62,23 @@ const PrivacyContent = () => {
           <p>Our services are not intended for individuals under the age of 16. We do not knowingly collect personal information from children. If you believe that we have collected personal information from a child without parental consent, please contact us immediately so that we can take appropriate action.</p>
           <h2>7. Our services</h2>
 
-          <p>We provide different services both for startups and creators. We help startups find a sutaible content creator that will perfectly align with their product/service and promote their product/service. We also help creators find startups that are willing to pay them via affiliate marketing, PPC or a fixed amount per story, post or video. Now you, as a startup or a content creator, don't have to spend hours on researching the suitable creator/startup.</p>
+          <p>We provide different services both for brands and creators. We help brands find a sutaible content creator that will perfectly align with their product/service and promote their product/service. We also help creators find brands that are willing to pay them via affiliate marketing, PPC or a fixed amount per story, post or video. Now you, as a brand or a content creator, don't have to spend hours on researching the suitable creator/brand.</p>
           <h2>7. Our profit</h2>
 
           <p>We get payed on a contract.</p>
-          <p>If you are a startup:</p>
+          <p>If you are a brand:</p>
           <ul>
               <li>You might ocasionally be connected for free with a creator that is willing to work with you.</li>
-              <li>The number of creators that we find specifically for your startup, who are ready to start working with you.</li>
+              <li>The number of creators that we find specifically for your brand, who are ready to start working with you.</li>
               <li>The reach (audience) of a creator that you will work with.</li>
               <li>A % of sales of your service/product that was made through us.</li>
           </ul>
           <p>How you get payed as a creator:</p>
           <ul>
-              <li>You might ocasionally be connected for free with a startup that is willing to work with you.</li>
+              <li>You might ocasionally be connected for free with a brand that is willing to work with you.</li>
               <li>Based on views, likes, CPL or a % of the MMR which was created from the traffic you got.</li>
               <li>You get your payment via paypal or a different service that we agree on in our contract.</li>
-              <li>The amount you get payed heavily depends on the amount of people who buy the startup product/service or visit their website.</li>
+              <li>The amount you get payed heavily depends on the amount of people who buy the brand product/service or visit their website.</li>
           </ul>
 
           <h2>8. Changes to This Privacy Policy</h2>
@@ -87,7 +87,6 @@ const PrivacyContent = () => {
       </div>
       <div className='footer__privacy' style={{paddingTop: '3rem'}}>
           <p>© 2023 <strong>GPT7 Connect</strong> All rights reserved.</p>
-          <p style={{padding: '1rem', lineHeight: '1.2rem'}}>We are an online marketing agency that helps startups get recognised.</p>
        </div>
     </>
   

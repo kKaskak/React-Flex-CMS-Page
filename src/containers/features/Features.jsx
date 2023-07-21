@@ -9,7 +9,7 @@ const Features = () => {
   return (
     <div className='gpt3__features section__margin' id='features'>
       <div className='gpt3__features-heading'>
-        <motion.h1 initial={'hidden'} whileInView={'show'} viewport={{ once: true }} variants={featuresH1} className='gradient__text'>Bring the power of<br/> <strong>social media marketing</strong> to your startup</motion.h1>
+        <motion.h1 initial={'hidden'} whileInView={'show'} viewport={{ once: true }} variants={featuresH1} className='gradient__text'>Bring the power of<br/> <strong>social media marketing</strong> to your brand</motion.h1>
         <Link to={'/contact'}><motion.p  initial={'hidden'} whileInView={'show'} viewport={{ once: true }} variants={featuresP} whileHover={hover}>Don't wait! Contact us now.</motion.p></Link>
       </div>
       <motion.div initial={'hidden'} whileInView={'show'} viewport={{ once: true }} variants={featuresContainer}  className='gpt3__features-container'>

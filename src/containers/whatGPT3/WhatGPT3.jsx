@@ -9,7 +9,7 @@ const WhatGPT3 = () => {
   return (
     <div className='gpt3__whatgpt3 section__margin' id='wgpt3'>
       <motion.div initial={'hidden'} whileInView={'show'}  viewport={{ once: true }} variants={itemFirst} className='gpt3__whatgpt3-feature'>
-        <Feature title="What is GPT-7 Connect" text="GPT-7 Connect is an online marketing agency that helps startups 
+        <Feature title="What is GPT-7 Connect" text="GPT-7 Connect is an online marketing agency that helps brands 
         in finding creators who are willing to promote their services."/>
       </motion.div>
       <div className='gpt3__whatgpt3-heading'>
@@ -18,15 +18,15 @@ const WhatGPT3 = () => {
       </div>
         <motion.div initial={'hidden'} whileInView={'show'} viewport={{ once: true }} variants={container} className='gpt3__whatgpt3-container'>
         < motion.span viewport={{ once: true }} variants={item}>
-        <Feature title="Influencer Marketing" text="We facilitate collaborations between startups and creators, leveraging their influence to reach a wider audience and drive brand awareness."/>
+        <Feature title="Influencer Marketing" text="We facilitate collaborations between brands and creators, leveraging their influence to reach a wider audience and drive brand awareness."/>
         </motion.span>
 
         < motion.span viewport={{ once: true }} variants={item}>
-        <Feature title="Social Media Reach" text="Our agency taps into the power of social media platforms, helping startups harness the potential of influencers to connect with their target customers effectively."/>
+        <Feature title="Social Media Reach" text="Our agency taps into the power of social media platforms, helping brands harness the potential of influencers to connect with their target customers effectively."/>
         </motion.span>
 
         < motion.span viewport={{ once: true }} variants={item}>
-        <Feature title="Targeted Promotions" text="We ensure that startups' services are promoted to the most relevant and engaged audiences, maximizing the impact of their marketing campaigns."/>
+        <Feature title="Targeted Promotions" text="We ensure that brands services are promoted to the most relevant and engaged audiences, maximizing the impact of their marketing campaigns."/>
         </motion.span>
         </motion.div>
     </div>

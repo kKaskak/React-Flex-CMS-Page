@@ -13,7 +13,7 @@ const Possibility = () => {
       <motion.div className='gpt3__possibility-container'>
         <Link to={'/contact'}><motion.h4 initial={'hidden'} whileInView={'show'} whileHover={hover} viewport={{ once: true }}  variants={h4}>Request a quote to Get Started</motion.h4></Link>
         <motion.h1 initial={'hidden'} whileInView={'show'} viewport={{ once: true }}  variants={h1} className="gradient__text">Discover Limitless Potential</motion.h1>
-        <motion.p initial={'hidden'} whileInView={'show'} viewport={{ once: true }}  variants={p}>Unleash your creativity and push the boundaries of your startup. Join us today.</motion.p>
+        <motion.p initial={'hidden'} whileInView={'show'} viewport={{ once: true }}  variants={p}>Unleash your creativity and push the boundaries of your brand. Join us today.</motion.p>
         <Link to={'/contact'}><motion.h4 initial={'hidden'} whileInView={'show'} whileHover={hover} viewport={{ once: true }}  variants={h4_2}>Get ahead of the game - Request Access Today!</motion.h4></Link>
       </motion.div>
     </div>

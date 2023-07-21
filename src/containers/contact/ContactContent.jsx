@@ -4,24 +4,37 @@ import "./Contact.css"
 import { AiFillPhone, AiFillInstagram, AiFillTwitterSquare } from 'react-icons/ai'
 import { MdEmail } from 'react-icons/md'
 const ContactContent = ({inputValue}) => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: inputValue || '', message: '' });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const { username, email, message, MMR } = formData;
+  const { username, message, MMR, email } = formData;
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = () => {
+  const [error, setError] = useState(null);
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (username === "" || message === "" || MMR === "" ||  email === "") {
+      setError("Please fill in all the fields");
+      setTimeout(() => {
+        setError(null)
+      }, 3000);
+      return;
+    }
     setLoading(true);
+    setError(null);
 
     const contact = {
       _type: 'contact', 
       name: formData.username,
-      email: inputValue,
+      email: formData.email || "",
       message: formData.message,
       MMR: formData.MMR
     };
@@ -36,8 +49,8 @@ const ContactContent = ({inputValue}) => {
   return (
     <>
     <div className='ct__contact'>
-    <div className='gpt7__contact section__padding'>
-      <h1 className='gradient__text gpt7__contact-heading'><AiFillPhone style={{marginRight: '1rem', color: '#fff'}}/> Contact us now</h1>
+    <div className='gpt7__contact section__padding' style={{paddingBottom: '1rem'}}>
+      <h1 className='gradient__text gpt7__contact-heading'><AiFillPhone className="social" style={{marginRight: '1rem'}}/> Contact us now</h1>
     </div>
       <div className='ct__contact-contact'>
         <div className='ct__contact-card'>
@@ -48,16 +61,17 @@ const ContactContent = ({inputValue}) => {
       {!isFormSubmitted ? (
         <div className="ct__contact-form">
           <div className="">
-            <input className="" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+            <input required className="" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
           </div>
           <div className="">
-            <input className="email-data" type="email" placeholder={"Your Email"} name="email" value={inputValue || null} onChange={handleChangeInput} />
+            <input required className="email-data" type="email" placeholder={"Your Email"} name="email" value={email || "" } onChange={handleChangeInput} />
           </div>
           <div className="">
-            <input className="" type="text" placeholder={"Describe your startup in a few words / Type of content you make"} name="MMR" value={MMR} onChange={handleChangeInput} />
+            <input required className="" type="text" placeholder={"Describe your brand (type of content)"} name="MMR" value={MMR} onChange={handleChangeInput} />
           </div>
           <div>
             <textarea
+              required
               className=""
               placeholder={"Your Message"}
               value={message}
@@ -65,7 +79,8 @@ const ContactContent = ({inputValue}) => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+          {error && <div className="error-message">{error}!</div>}
+          <button type="submit" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
         </div>
       ) : (
         <div className='ct__contact-response'>
@@ -76,8 +91,8 @@ const ContactContent = ({inputValue}) => {
       )}
       <hr className='hr-contact'></hr>
      <div className='ct__contact-waves'>
-        <a className='ct__contact-waves__twitter-in' href="https://www.instagram.com/gpt7_connect" rel="noreferrer" target='_blank'><AiFillInstagram style={{ color: '#fff'}} size={60}/></a>
-        <a className='ct__contact-waves__twitter-in' href="https://www.twitter.com/gpt7_connect" rel="noreferrer" target='_blank'><AiFillTwitterSquare style={{ color: '#fff'}} size={60}/></a>
+        <a className='ct__contact-waves__twitter-in' href="https://www.instagram.com/gpt7_connect" rel="noreferrer" target='_blank'><AiFillInstagram className="social" size={60}/></a>
+        <a className='ct__contact-waves__twitter-in' href="https://www.twitter.com/gpt7_connect" rel="noreferrer" target='_blank'><AiFillTwitterSquare className="social"  size={60}/></a>
      </div>
      <div className='ct__contact-waves__rights'> 
         <h6 style={{color: '#fff'}}>© 2023 GPT7 Connect • All rights reserved.</h6>
