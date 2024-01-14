@@ -19,51 +19,33 @@
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+    font-family: var(--font-family);
 }
 
 body {
-  background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-  /* safari 5.1+,chrome 10+ */
-  background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-  /* opera 11.10+ */
-  background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-  /* ie 10+ */
-  background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-  /* global 92%+ browsers support */
-  background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-  overflow-x: hidden;
-
+	background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+	background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+	background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+	background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+	background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+	overflow-x: hidden;
 }
+
 a {
     color: unset;
     text-decoration: none;
 }
 
 .gradient__bg {
-    /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-    /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-    /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-    /* ie 10+ */
-    background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-    /* global 92%+ browsers support */
-    background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-        
+	background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+	background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+	background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+	background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+	background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
 }
 
 .gradient__text {
@@ -73,10 +55,34 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.btn-redirect {
+    background: var(--color-subtext);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.error-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .section__padding {
     padding: 4rem 6rem;
-
 }
+
 .section__margin {
   max-width: 1350px;
   margin: 4rem auto;
@@ -86,6 +92,7 @@ a {
 	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+
  @-webkit-keyframes scale-up-center {
     0% {
       -webkit-transform: scale(0.5);
@@ -95,8 +102,9 @@ a {
       -webkit-transform: scale(1);
               transform: scale(1);
     }
-  }
-  @keyframes scale-up-center {
+}
+
+@keyframes scale-up-center {
     0% {
       -webkit-transform: scale(0.5);
               transform: scale(0.5);
@@ -105,53 +113,56 @@ a {
       -webkit-transform: scale(1);
               transform: scale(1);
     }
-  }
-  .scale-down-center {
+}
+
+.scale-down-center {
     -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
+}
+
 @-webkit-keyframes scale-down-center {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
+	0% {
+			-webkit-transform: scale(1);
+				transform: scale(1);
+	}
+	100% {
+			-webkit-transform: scale(0.5);
+				transform: scale(0.5);
+	}
 }
 @keyframes scale-down-center {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
+	0% {
+		-webkit-transform: scale(1);
+				transform: scale(1);
+	}
+	100% {
+		-webkit-transform: scale(0.5);
+				transform: scale(0.5);
+	}
 }
 
 
-  @media  screen and (max-width: 1400px) {
+@media  screen and (max-width: 1400px) {
     .section__margin {
       margin: 4rem 6rem;
     }
-  }
+}
   
-  @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .section__padding {
         padding: 4rem;
     }
     .section__margin {
         margin: 4rem;
     }
-  }
-  @media screen and (max-width: 550px) {
+}
+
+@media screen and (max-width: 550px) {
     .section__padding {
         padding: 1rem 2rem;
     }
     .section__margin {
         margin: 4rem 2rem;
     }
-  }
+}
   
