@@ -1,10 +1,10 @@
-import { NavbarShort } from '../../components';
+import { Navbar } from '../../components';
 import PrivacyContent from './PrivacyContent';
 
 const Privacy = () => {
 	return (
 		<>
-			<NavbarShort />
+			<Navbar />
 			<PrivacyContent />
 		</>
 	);
