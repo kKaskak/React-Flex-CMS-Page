@@ -2,9 +2,9 @@ import React from 'react';
 import { PiMoney } from 'react-icons/pi';
 import Slider from '@mui/material/Slider';
 import { Box } from '@mui/material';
-import './Pricing.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import './pricing.css';
 
 const Pricing = () => {
 	const [value, setValue] = React.useState(0);
