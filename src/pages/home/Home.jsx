@@ -5,19 +5,19 @@ import {
 	WhatGPT3,
 	Header,
 } from '../../containers';
-import { CTA, Navbar } from '../../components';
+import { CTA } from '../../components';
+import React from 'react';
 
 const Home = () => {
 	return (
-		<div>
-			<Navbar />
+		<React.Fragment>
 			<Header />
 			<WhatGPT3 />
 			<Features />
 			<Possibility />
 			<CTA />
 			<Footer />
-		</div>
+		</React.Fragment>
 	);
 };
 

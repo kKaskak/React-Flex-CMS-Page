@@ -1,19 +1,39 @@
-.gpt7__pricing {
+.pricing-wrapper {
+    min-height: 93vh;
+}
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.gpt7__pricing-heading {
+
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
-    font-family: var(--font-family) ;
 }
-.gpt7__pricing h3 {
-    font-size: 1.5rem;
-    font-family: var(--font-family);
+.subheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--color-text);
-    padding-top: 1rem;
+}
+
+.slider {
+    display: block;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem;
+    gap: 4rem;
+}
+
+.MuiSlider-markLabel {
+    color: #fff !important;
 }
