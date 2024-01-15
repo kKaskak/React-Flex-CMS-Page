@@ -9,7 +9,6 @@
     justify-content: center;
     align-items: center;
     font-size: 4rem;
-    font-family: var(--font-family) ;
 }
 
 @media screen and (max-width: 1050px) {
@@ -27,13 +26,11 @@
 
 .policy {
     color: var(--color-text);
-    font-family: var(--font-family);
 }
 
 .policy h2 {
     font-size: 24px;
     color: #fff;
-    font-family: var(--font-family);
     padding: 1rem 0;
 
 }
@@ -53,7 +50,6 @@
 .footer__privacy {
     padding: 2rem;
     color: #fff;
-    font-family: var(--font-family);
     text-align: center;
 }
 

@@ -14,7 +14,6 @@
     margin-right: 2rem;
 }
 .gpt3__features-container__feature-title h1 {
-    font-family: var(--font-family);
     font-weight: 800;
     font-size: 18px;
     line-height: 30px;
@@ -38,7 +37,6 @@
     display: flex;
 }
 .gpt3__features-container__feature-text p {
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;

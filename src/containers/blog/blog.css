@@ -9,7 +9,6 @@
     width: 100%;
 }
 .gpt3__blog-header h1 {
-    font-family: var(--font-family);
     font-weight: 800;
     font-size: 62px;
     line-height: 75px;
@@ -35,7 +34,7 @@
         font-size: 18px;
         line-height: 25px;
         color: #FFFFFF;
-        font-family: var(--font-family);
+
         margin-bottom: 3rem;
         margin-top: 0.5rem;
         cursor: pointer;

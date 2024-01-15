@@ -1,87 +1,102 @@
 import React from 'react';
 import { PiMoney } from 'react-icons/pi';
-import Slider from '@mui/material/Slider';
-import { Box } from '@mui/material';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import Item from '../../components/cart/Item/Item';
 import './pricing.css';
+import { AnimatePresence } from 'framer-motion';
 
 const Pricing = () => {
-	const [value, setValue] = React.useState(0);
-	const [visible, setVisible] = React.useState(false);
+	const [activeProduct, setActiveProduct] = React.useState(null);
 
-	const handleChange = (event) => {
-		setValue(event.target.value);
-		setVisible(true);
+	const handleClick = (product) => {
+		setActiveProduct(product);
 	};
-	const appearAnimation = {
-		hidden: { opacity: 0 },
-		visible: { opacity: 1, transition: { duration: 1 } }
+
+	const createValueLabelFormat = (marks) => {
+		return function returnValue(value) {
+			const mark = marks.find((mark) => mark.value === value);
+			return mark ? mark.value : '';
+		};
 	};
-	const hoverAnimation = {
-		scale: 1.1,
-		transition: {
-			duration: 0.3
+
+	const createSliderProps = (min, max, defaultValue, sliderWidth, marks) => {
+		return {
+			min,
+			max,
+			default: defaultValue,
+			marks,
+			width: sliderWidth,
+			valueLabelFormat: createValueLabelFormat(marks),
+			valueText: function (value) {
+				return `${value}`;
+			}
+		};
+	};
+
+	const products = [
+		{
+			id: 1,
+			itemTitle: 'Credits',
+			sliderProps: createSliderProps(
+				500, 6500, 500, 400, [
+					{ value: 500, label: '4.99$' },
+					{ value: 1100, label: '9.99$' },
+					{ value: 3000, label: '24.99$' },
+					{ value: 6500, label: '49.99$' }
+				]
+			),
+		},
+		{
+			id: 2,
+			itemTitle: 'Keys',
+			sliderProps: createSliderProps(
+				1, 10, 1, 300, [
+					{ value: 1, label: '4.99$' },
+					{ value: 3, label: '9.99$' },
+					{ value: 7, label: '24.99$' },
+					{ value: 10, label: '49.99$' }
+				]
+			),
+		},
+		{
+			id: 3,
+			itemTitle: 'Variables',
+			sliderProps: createSliderProps(
+				1, 10, 1, 300, [
+					{ value: 1, label: '4.99$' },
+					{ value: 3, label: '9.99$' },
+					{ value: 7, label: '24.99$' },
+					{ value: 10, label: '49.99$' }
+				]
+			),
 		}
-	};
-
-	const marks = [
-		{
-			value: 340,
-			label: '12.99$'
-		},
-		{
-			value: 550,
-			label: '19.99$'
-		},
-		{
-			value: 760,
-			label: '29.99$'
-		},
-		{
-			value: 1000,
-			label: '39.99$'
-		},
 	];
 
-	const valueLabelFormat = (value) => {
-		return marks.map((mark) => mark.value === value) ? `${value}` : '';
-	};
-
-	const valueText = (value) => {
-		return value;
-	};
 	return (
-		<div className='pricing-wrapper'>
-			<div className='content section__padding'>
-				<h1 className='gradient__text heading'><PiMoney className='social' style={{ marginRight: '1rem' }}/>Pricing</h1>
-				<h3 className='subheading'>Select your amount of credits.</h3>
-				<div className='content-wrapper'>
-					<div className='slider'>
-						<Box sx={{ width: 350, height: 100, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-							<Slider
-								aria-label='Restricted values'
-								defaultValue={340}
-								valueLabelFormat={valueLabelFormat}
-								getAriaValueText={valueText}
-								step={null}
-								min={340}
-								max={1000}
-								marks={marks}
-								onChange={handleChange}
-								valueLabelDisplay='auto'
-							/>
-						</Box>
-					</div>
-					<div className='btn-container'>
-						{
-							visible && value > 0 &&
-								<motion.div animate={appearAnimation.visible} exit={appearAnimation.hidden} initial={appearAnimation.hidden} whileHover={hoverAnimation}>
-									<Link className='btn-redirect'>To checkout</Link>
-								</motion.div>
-						}
-					</div>
-				</div>
+		<div className='pricing-wrapper section__padding'>
+			<h1 className='gradient__text heading'><PiMoney className='social' style={{ marginRight: '1rem' }}/>Order now</h1>
+			<h3 className='subheading'>Click, select product & amount and add to card.</h3>
+			<div className='items-wrapper'>
+				<AnimatePresence>
+					{
+						products.map((product) => {
+							return (
+								<Item
+									active={activeProduct === product.id}
+									itemMarks={product.sliderProps.marks}
+									valueLabelFormat={product.sliderProps.valueLabelFormat}
+									valueText={product.sliderProps.valueText}
+									minSliderValue={product.sliderProps.min}
+									maxSliderValue={product.sliderProps.max}
+									defaultSliderValue={product.sliderProps.default}
+									itemTitle={product.itemTitle}
+									key={product.id}
+									sliderWidth={product.sliderProps.width}
+									onClick={() => handleClick(product)}
+								/>
+							);
+						})
+					}
+				</AnimatePresence>
 			</div>
 			<div className='footer__privacy'>
 				<p>© 2023 <strong>GPT7 Connect</strong> All rights reserved.</p>

@@ -25,7 +25,6 @@
     border-bottom-right-radius: 1rem;
 }
 .gpt3__blog-articles__article-components p {
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 11.649px;
     line-height: 35px;
@@ -36,14 +35,12 @@
     font-size: 25.11px;
     line-height: 30px;
     color: #FFFFFF;
-    font-family: var(--font-family);
     margin-bottom: 2rem;
     margin-top: 0.5rem;
 
     cursor: pointer;
 }
 .gpt3__blog-articles__article-components p:last-child {
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 11.649px;
     line-height: 35px;
@@ -52,7 +49,6 @@
     cursor: pointer;
 }
 .gpt3__blog-articles__article-desc {
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 13px;
     line-height: normal;

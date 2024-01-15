@@ -17,7 +17,6 @@
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    font-family: var(--font-family);
 }
 
 @media screen and (max-width: 1050px) {
@@ -61,13 +60,11 @@
 }
 
 .ct__contact-head-text h1 {
-    font-family: var(--font-family);
     font-size: 40px;
     font-weight: 1300;
 }
 
 .ct__contact-head-text h4 {
-    font-family: var(--font-family);
     font-size: 16px;
     font-weight: 300;
     color: #fff;
@@ -121,19 +118,16 @@
     font-size: 0.8rem;
     line-height: 1.5;
     text-align: center;
-    font-family: var(--font-family);
 }
 
   
 .ct__contact-cards .ct__contact-card p {
     font-weight: 500;
-    font-family: var(--font-family);
 }
   
 .ct__contact-cards .ct__contact-card a {
     text-decoration: none;
     font-weight: 500;
-    font-family: var(--font-family);
 }
 
 .ct__contact-form {
@@ -164,7 +158,6 @@
     padding: 1rem 2rem;
     border: none;
     border-radius: 1.5rem;
-    font-family: var(--font-family);
     color: #fff;
     outline: none;
     margin-bottom: 0.5rem;
@@ -181,7 +174,6 @@
     padding: 1.5rem 2rem;
     border: none;
     border-radius: 1.5rem;
-    font-family: var(--font-family);
     background-color: rgba(0, 0, 0, 0.1);
     color: #fff;
     outline: none;
@@ -197,7 +189,6 @@
     color: var(--color-text);;
     outline: none;
     margin: 2rem 0 0rem 0;
-    font-family: var(--font-family);
     transition: 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -234,7 +225,6 @@
 	display: flex;
 	text-align: center;
 	color: var(--color-text);
-	font-family: var(--font-family);
 }
 
 @media screen and (max-width: 700px) {
@@ -319,7 +309,6 @@
   padding: 0.5rem;
   text-align: center;
   font-size: 14px;
-  font-family: var(--font-family);
   text-decoration: none;
   text-transform: inherit;
   font-weight: 400;
@@ -350,7 +339,6 @@
 .error-message {
   color: var(--color-text);
   background: transparent;
-  font-family: var(--font-family);
   padding-top: 1rem;
   text-align: center;
   font-weight: 700;
