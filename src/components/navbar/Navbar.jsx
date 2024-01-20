@@ -3,54 +3,45 @@ import {RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.svg';
 import './navbar.css';
 import { Link } from 'react-router-dom';
+import Menu from './Menu';
 
-const Menu = () => (
-	<>
-		<Link to={'/'}> <p>Home</p></Link>
-		{/* <p><a href='#wgpt3'>What is GPT-7 Connect?</a></p> */}
-		{/* <p><a href='#possibility'>Possibilities</a></p> */}
-		{/* <p><a href='#features'>Case Studies</a></p> */}
-		<Link to={'/pricing'}> <p>Pricing</p></Link>
-		<Link to={'/contact'}> <p>Contact</p></Link>
-		<Link to={'/privacy'}> <p>Privacy policy</p></Link>
-	</>
-);
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
-	// const navbarContainer = document.querySelector('.gpt3__navbar-menu_container');
+
 	const setScaleUp = () => {
 		setToggleMenu(true);
 	};
-	const setScaleDown = () => {
+	const setScaleDown = (e) => {
+		e.preventDefault();
 		setToggleMenu(false);
 	};
 
 	return (
-		<div className='gpt3__navbar'>
-			<div className='gpt3__navbar-links'>
-				<div className='gpt3__navbar-links_logo'>
+		<div className='navbar'>
+			<div className='navbar-content'>
+				<div className='logo-container'>
 					<Link to={'/'}><img src={logo} alt="alt" /></Link>
 				</div>
-				<div className='gpt3__navbar-links_container'>
+				<div className='links-container'>
 					<Menu />
 				</div>
 			</div>
-			<div className='gpt3__navbar-sign'>
+			<div className='sign-in-container'>
 				{/* <p>Sign in</p>
-        <button type='button'>Sign up</button> */}
+				<button type='button'>Sign up</button> */}
 			</div>
-			<div className='gpt3__navbar-menu'>
+			<div className='mobile-menu'>
 				{toggleMenu
-					? <RiCloseLine color='#fff' size={27} onClick={() => setScaleDown()} />
-					: <RiMenu3Line color='#fff' size={27} onClick={() => setScaleUp()} />
+					? <RiCloseLine color='#fff' size={27} onClick={setScaleDown} />
+					: <RiMenu3Line color='#fff' size={27} onClick={setScaleUp} />
 				}
 				{toggleMenu && (
-					<div className='gpt3__navbar-menu_container scale-up-center'>
-						<div className='gpt3__navbar-links_container-links'>
-							<Menu />
-							<div className='gpt3__navbar-menu_container-links-sign'>
+					<div className='mobile-menu-container scale-up-center'>
+						<div className='mobile-content'>
+							<Menu onMenuItemClick={setScaleDown} />
+							<div className='mobile-sign-in-content'>
 								{/* <p>Sign in</p>
-                <button type='button'>Sign up</button> */}
+								<button type='button'>Sign up</button> */}
 							</div>
 						</div>
 					</div>

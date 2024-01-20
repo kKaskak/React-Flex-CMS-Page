@@ -11,3 +11,11 @@ export const overlay = {
 		},
 	}
 };
+
+export const itemHover = {
+	scale: 1.05,
+	transition: {
+		duration: 0.3,
+		ease: [0, 0.55, 0.45, 1]
+	},
+};
