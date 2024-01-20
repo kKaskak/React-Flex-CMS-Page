@@ -2,17 +2,20 @@ import React from 'react';
 import { Outlet } from 'react-router';
 import { Navbar } from '../../components';
 import { useStateContext } from '../../context/StateContext';
-import Cart from '../../components/cart/Cart';
+import { AnimatePresence } from 'framer-motion';
+import { Cart } from '../../components';
 
 const Root = () => {
 	const { showCart } = useStateContext();
 	return (
 		<React.Fragment>
 			<Navbar />
-			{
-				showCart &&
-					<Cart />
-			}
+			<AnimatePresence>
+				{
+					showCart &&
+						<Cart />
+				}
+			</AnimatePresence>
 			<Outlet />
 		</React.Fragment>
 	);

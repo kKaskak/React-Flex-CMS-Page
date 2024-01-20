@@ -28,9 +28,9 @@ const Pricing = () => {
 					products.map((product) => {
 						return (
 							<Item
+								key={product._id}
 								active={activeProduct === product._id}
 								product={product}
-								key={product._id}
 								onClick={() => handleClick(product)}
 							/>
 						);

@@ -50,7 +50,7 @@ const Item = ({ product, onClick }) => {
 								</span>
 							</p>
 						</div>
-						<button className='btn' onClick={() => onAdd(product, qty)}>Add to cart</button>
+						<button className='btn-redirect' onClick={() => onAdd(product, qty)}>Add to cart</button>
 					</div>
 				}
 			</motion.div>
@@ -76,5 +76,6 @@ Item.propTypes = {
 		categories: PropTypes.array.isRequired,
 		details: PropTypes.string.isRequired,
 	}).isRequired,
+	id: PropTypes.string.isRequired
 };
 

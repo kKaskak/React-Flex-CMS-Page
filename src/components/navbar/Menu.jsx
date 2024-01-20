@@ -4,11 +4,17 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './navbar.css';
 
-const Menu = ({ onMenuItemClick }) => {
+const Menu = ({ closeMenu }) => {
 	const { setShowCart } = useStateContext();
 
 	const handleCartClick = () => {
 		setShowCart(true);
+		closeMenu();
+	};
+
+	const handleLinkClick = () => {
+		setShowCart(false);
+		closeMenu();
 	};
 
 	const links = [
@@ -21,11 +27,11 @@ const Menu = ({ onMenuItemClick }) => {
 	return (
 		<>
 			{links.map((link) => (
-				<Link key={link.id} to={link.to} onClick={onMenuItemClick}>
+				<Link key={link.id} to={link.to} onClick={handleLinkClick}>
 					<p>{link.text}</p>
 				</Link>
 			))}
-			<FaShoppingCart fill='#fff' className='cart' style={{ cursor: 'pointer' }} onClick={handleCartClick} />
+			<FaShoppingCart className='cart' size={25} style={{ cursor: 'pointer' }} onClick={handleCartClick} />
 		</>
 	);
 };
@@ -33,5 +39,6 @@ const Menu = ({ onMenuItemClick }) => {
 export default Menu;
 
 Menu.propTypes = {
-	onMenuItemClick: PropTypes.func.isRequired,
+	closeMenu: PropTypes.func
 };
+

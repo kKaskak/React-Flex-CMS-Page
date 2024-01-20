@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import {RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.svg';
-import './navbar.css';
 import { Link } from 'react-router-dom';
 import Menu from './Menu';
+import { AnimatePresence, motion } from 'framer-motion';
+import { navbarAnimation } from './animations/animations';
+import './navbar.css';
 
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
@@ -11,9 +13,12 @@ const Navbar = () => {
 	const setScaleUp = () => {
 		setToggleMenu(true);
 	};
-	const setScaleDown = (e) => {
-		e.preventDefault();
+	const setScaleDown = () => {
 		setToggleMenu(false);
+	};
+
+	const closeMenu = () => {
+		setTimeout(setToggleMenu(false), 500);
 	};
 
 	return (
@@ -35,17 +40,19 @@ const Navbar = () => {
 					? <RiCloseLine color='#fff' size={27} onClick={setScaleDown} />
 					: <RiMenu3Line color='#fff' size={27} onClick={setScaleUp} />
 				}
-				{toggleMenu && (
-					<div className='mobile-menu-container scale-up-center'>
-						<div className='mobile-content'>
-							<Menu onMenuItemClick={setScaleDown} />
-							<div className='mobile-sign-in-content'>
-								{/* <p>Sign in</p>
-								<button type='button'>Sign up</button> */}
+				<AnimatePresence>
+					{toggleMenu &&
+						<motion.div className='mobile-menu-container' layout initial={navbarAnimation.hidden} animate={navbarAnimation.visible} exit={navbarAnimation.hidden}>
+							<div className='mobile-content'>
+								<Menu closeMenu={closeMenu} />
+								<div className='mobile-sign-in-content'>
+									{/* <p>Sign in</p>
+									<button type='button'>Sign up</button> */}
+								</div>
 							</div>
-						</div>
-					</div>
-				)}
+						</motion.div>
+					}
+				</AnimatePresence>
 			</div>
 		</div>
 	);
