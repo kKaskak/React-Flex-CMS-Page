@@ -13,6 +13,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "classnames": "^2.5.1",
+    "env": "^0.0.2",
     "framer-motion": "^10.12.8",
     "prettier": "^3.2.4",
     "prop-types": "^15.8.1",
