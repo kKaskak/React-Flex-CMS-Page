@@ -1,3 +1,11 @@
+# Flexible one Pager with Sanity CMS integration
+
+*Features*
+ 1. Quickly change the text or images within Sanity Studio.
+ 2. Get the form submissions in the Sanity Studio.
+ 3. Fully flexible.
+ 4. Integrated shop features (products page, cart features).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
